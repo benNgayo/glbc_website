@@ -134,7 +134,7 @@ const Page = () => {
                 ministry and service in various contexts.{" "}
               </p>
             </div>
-            <div className="flex md:flex-col  gap-4 pb-8">
+            <div className="hidden md:flex md:flex-col  gap-4 pb-8">
               <div>
                 <h1 className="text-4xl font-extrabold text-glbc-secondary">
                   141
@@ -156,7 +156,7 @@ const Page = () => {
             type="single"
             collapsible
             // defaultValue="YR1"
-            className="max-w-105 xl:max-w-none w-full"
+            className="max-w-105 xl:max-w-none w-full mx-auto"
           >
             <AccordionItem value="YR1">
               <AccordionTrigger className="cursor-pointer">

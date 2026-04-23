@@ -28,7 +28,7 @@ const President = () => {
       <div className=" justify-center flex flex-col items-center text-justify gap-8 py-8 ">
         <div className="justify-center flex flex-col md:flex-row gap-6 items-start max-w-130 mx-auto shadow-lg p-6 rounded-lg">
           <Image
-            src="/situma.jpg"
+            src="/Situma.jpg"
             alt="President"
             width={220}
             height={300}
@@ -71,7 +71,12 @@ const President = () => {
             <br />
             <br />
             <ol start={1}>
-              <li className="text-lg font-semibold"> <a href="/about/faculty" className=" underline text-blue-950 ">Faculty</a></li>
+              <li className="text-lg font-semibold">
+                {" "}
+                <a href="/about/faculty" className=" underline text-blue-950 ">
+                  Faculty
+                </a>
+              </li>
               <li>
                 Faculty Without a doubt, the number one influence upon students
                 during their time in seminary is the faculty. This means that
@@ -88,7 +93,7 @@ const President = () => {
               </li>
               <br />
               <li className="text-lg font-semibold">Curriculum</li>
-              
+
               <li>
                 At GLBC we are committed to the inerrancy of scripture, and we
                 stand squarely within the tradition Sola fide, sola scriptura,
@@ -102,81 +107,96 @@ const President = () => {
                 word.
               </li>
               <br />
-              <li className="text-lg font-semibold" >Language Training</li>
+              <li className="text-lg font-semibold">Language Training</li>
               <li>
                 Understanding Greek and Hebrew is highly significant in the
                 context of biblical exegesis, which is the critical
                 interpretation and explanation of biblical texts. Here are some
                 key reasons why these original languages are important for a
                 student studying at GLBC enables delivery of the Bible’s message
-                accurately: 
+                accurately:
                 <br /> <br />
-                <p >
-<span className="font-semibold italic">Precision and Clarity: </span>  Greek and Hebrew, the
-                original languages of the Bible, often contain nuances and
-                meanings that are difficult to fully capture in translation.
-                Words can have multiple meanings or carry cultural connotations
-                that are lost or altered when translated into another language.
-                Knowing the original language allows a more precise
-                understanding of scripture. 
+                <p>
+                  <span className="font-semibold italic">
+                    Precision and Clarity:{" "}
+                  </span>{" "}
+                  Greek and Hebrew, the original languages of the Bible, often
+                  contain nuances and meanings that are difficult to fully
+                  capture in translation. Words can have multiple meanings or
+                  carry cultural connotations that are lost or altered when
+                  translated into another language. Knowing the original
+                  language allows a more precise understanding of scripture.
                 </p>
                 <br /> <br />
                 <p>
-<span className="font-semibold italic">Cultural Context: </span> The languages of
-                the Bible are intertwined with the cultural and historical
-                settings of the times. Understanding the culture and idiomatic
-                expressions of ancient Hebrew and Greek societies helps in
-                grasping the context in which the texts were written.
+                  <span className="font-semibold italic">
+                    Cultural Context:{" "}
+                  </span>{" "}
+                  The languages of the Bible are intertwined with the cultural
+                  and historical settings of the times. Understanding the
+                  culture and idiomatic expressions of ancient Hebrew and Greek
+                  societies helps in grasping the context in which the texts
+                  were written.
                 </p>
                 <br /> <br />
                 <p>
-<span className="font-semibold italic">Theological Insight: </span> Many theological concepts and doctrines are
-                deeply embedded in the linguistics of the original texts.
-                Subtleties in verb tense, word choice, and grammatical structure
-                can offer insights into theological implications that might be
-                simplified in translation. Identifying Literary Devices:
-                Scripture uses a variety of literary devices, such as metaphors,
-                poetry, and parallelism, which are embedded within the original
-                languages. Recognizing these elements allows for a richer and
-                more nuanced interpretation of the text.
+                  <span className="font-semibold italic">
+                    Theological Insight:{" "}
+                  </span>{" "}
+                  Many theological concepts and doctrines are deeply embedded in
+                  the linguistics of the original texts. Subtleties in verb
+                  tense, word choice, and grammatical structure can offer
+                  insights into theological implications that might be
+                  simplified in translation. Identifying Literary Devices:
+                  Scripture uses a variety of literary devices, such as
+                  metaphors, poetry, and parallelism, which are embedded within
+                  the original languages. Recognizing these elements allows for
+                  a richer and more nuanced interpretation of the text.
                 </p>
                 <br /> <br />
                 <p>
-<span className="font-semibold italic">Lexical Studies: </span> 
-                Conducting word studies in the original languages can reveal
-                deeper meanings and connections within the text. For example,
-                one Greek or Hebrew word might encompass a range of meanings and
-                themes that broaden the understanding of a passage. Avoiding
-                Misinterpretations: Translations are influenced by the
-                perspectives and limitations of the translators. Having access
-                to the original languages helps avoid doctrinal errors that can
-                arise from translation discrepancies or biases.
+                  <span className="font-semibold italic">
+                    Lexical Studies:{" "}
+                  </span>
+                  Conducting word studies in the original languages can reveal
+                  deeper meanings and connections within the text. For example,
+                  one Greek or Hebrew word might encompass a range of meanings
+                  and themes that broaden the understanding of a passage.
+                  Avoiding Misinterpretations: Translations are influenced by
+                  the perspectives and limitations of the translators. Having
+                  access to the original languages helps avoid doctrinal errors
+                  that can arise from translation discrepancies or biases.
                 </p>
                 <br /> <br />
                 <p>
-<span className="font-semibold italic">Intertextual Connections: </span> Understanding the original languages assists in
-                exploring the interconnectedness of various biblical texts,
-                identifying quotations and allusions throughout the Bible that
-                may be missed without access to the original text.
+                  <span className="font-semibold italic">
+                    Intertextual Connections:{" "}
+                  </span>{" "}
+                  Understanding the original languages assists in exploring the
+                  interconnectedness of various biblical texts, identifying
+                  quotations and allusions throughout the Bible that may be
+                  missed without access to the original text.
                 </p>
                 <br /> <br />
                 <p>
- <span className="font-semibold italic">Engagement with Scholarship: </span> Much of biblical scholarship involves critical
-                engagement with ancient texts in their original languages. By
-                understanding these languages, scholars and students can
-                actively participate in ongoing theological discussions and
-                debates. Learning Greek and Hebrew, therefore, equips
-                individuals with tools to engage more faithfully and deeply with
-                the scriptures, fostering a more thorough and authentic delivery
-                of the Bible’s message.
+                  <span className="font-semibold italic">
+                    Engagement with Scholarship:{" "}
+                  </span>{" "}
+                  Much of biblical scholarship involves critical engagement with
+                  ancient texts in their original languages. By understanding
+                  these languages, scholars and students can actively
+                  participate in ongoing theological discussions and debates.
+                  Learning Greek and Hebrew, therefore, equips individuals with
+                  tools to engage more faithfully and deeply with the
+                  scriptures, fostering a more thorough and authentic delivery
+                  of the Bible’s message.
                 </p>
-                  
               </li>
             </ol>
           </p>
         </div>
       </div>
-      <CTA/>
+      <CTA />
     </div>
   );
 };

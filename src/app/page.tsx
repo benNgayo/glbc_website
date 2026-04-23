@@ -41,7 +41,7 @@ export default function Home() {
       </div>
       <div className="p-4 md:p-8 mx-auto rounded-lg w-full xl:w-2/3">
         <h2 className="text-sm">OUR FOUNDATION</h2>
-        <p className="py-2 text-md font-lora lg:text-3xl">
+        <p className="py-2 text-lg font-lora lg:text-3xl">
           Grace Life Bible College (GLBC) is a Christ-centered institution,
           united in the calling of Jesus Christ and committed to fulfilling His
           purposes through sound, authentic theological and technical training.
@@ -65,7 +65,7 @@ export default function Home() {
           </h2>
           <div className="absolute mt-2 w-16 h-0.5 bg-glbc-accent"></div>
         </div>
-        <div className="flex flex-wrap justify-start lg:justify-center mx-auto mt-8 w-full max-w-6xl px-4 gap-8">
+        <div className="flex flex-wrap justify-center md:justify-start lg:justify-center mx-auto mt-8 w-full max-w-6xl px-4 gap-8">
           {departments.map((dept) => (
             <DepartmentCard
               key={dept.title}
@@ -125,13 +125,13 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div>
+      <div className="xl:w-2/3 mx-auto">
         <h1 className="text-center font-serif font-bold text-2xl">
           Why Study at GLBC?
         </h1>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8 px-4 md:px-8 xl:w-2/3 mx-auto mt-8 ">
+        <div className="grid  grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8 px-4 md:px-8  mt-8 ">
           {" "}
-          <div className="p-6 rounded-xl shadow-md text-center bg-white min-w-62.5">
+          <div className="p-6 rounded-xl shadow-md text-center bg-white max-w-62.5 mx-auto ">
             <BookOpen className="mx-auto text-glbc-accent mb-4" size={40} />
 
             <h3 className="font-semibold text-lg mb-2">Biblical Foundation</h3>
@@ -140,7 +140,7 @@ export default function Home() {
               Our curriculum is grounded in the inerrant Word of God.
             </p>
           </div>
-          <div className="p-6 rounded-xl shadow-md text-center bg-white min-w-62.5 ">
+          <div className="p-6 rounded-xl shadow-md text-center bg-white max-w-62.5 mx-auto ">
             <a href="/about/faculty">
               <GraduationCap
                 className="mx-auto text-glbc-accent mb-4"
@@ -156,7 +156,7 @@ export default function Home() {
               </p>
             </a>
           </div>
-          <div className="p-6 rounded-xl shadow-md text-center bg-white min-w-62.5">
+          <div className="p-6 rounded-xl shadow-md text-center bg-white max-w-62.5 mx-auto">
             <Users className="mx-auto text-glbc-accent mb-4" size={40} />
 
             <h3 className="font-semibold text-lg mb-2">Ministry Focus</h3>
@@ -166,7 +166,7 @@ export default function Home() {
               ministry.{" "}
             </p>
           </div>
-          <div className="p-6 rounded-xl shadow-md text-center bg-white min-w-62.5">
+          <div className="p-6 rounded-xl shadow-md text-center bg-white max-w-62.5 mx-auto">
             <Heart className="mx-auto text-glbc-accent mb-4" size={40} />
 
             <h3 className="font-semibold text-lg mb-2">Spiritual Growth</h3>

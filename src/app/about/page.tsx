@@ -124,7 +124,7 @@ const About = () => {
         </h1>
 
         <div className=" grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 px-4 md:px-8 xl:w-2/3 mx-auto mt-8">
-          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 ">
+          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 mx-auto">
             <BookOpenText
               className="mx-auto text-glbc-secondary mb-4"
               size={40}
@@ -137,7 +137,7 @@ const About = () => {
               training and conduct
             </p>
           </div>
-          <div className=" max-w-xs border border-gray-300 rounded-lg p-6">
+          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 mx-auto">
             <Globe className="mx-auto text-glbc-secondary mb-4" size={40} />
             <h1 className="text-center font-serif font-bold text-2xl">
               Missional
@@ -148,7 +148,7 @@ const About = () => {
               of Christ to the nations.
             </p>
           </div>
-          <div className=" max-w-xs border border-gray-300 rounded-lg p-6">
+          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 mx-auto">
             <ShieldCheck
               className="mx-auto text-glbc-secondary mb-4"
               size={40}
@@ -162,7 +162,7 @@ const About = () => {
               affairs.
             </p>
           </div>
-          <div className=" max-w-xs border border-gray-300 rounded-lg p-6">
+          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 mx-auto">
             <HandHeart className="mx-auto text-glbc-secondary mb-4" size={40} />
             <h1 className="text-center font-serif font-bold text-2xl">
               Servitude
@@ -173,7 +173,7 @@ const About = () => {
               to God.
             </p>
           </div>
-          <div className=" max-w-xs border border-gray-300 rounded-lg p-6">
+          <div className=" max-w-xs border border-gray-300 rounded-lg p-6 mx-auto">
             <Award className="mx-auto text-glbc-secondary mb-4" size={40} />
             <h1 className="text-center font-serif font-bold text-2xl">
               Excellence

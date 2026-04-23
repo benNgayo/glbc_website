@@ -47,6 +47,11 @@ export const navItems: NavItem[] = [
         href: "/about/faculty",
         description: "Meet our dedicated faculty members.",
       },
+      {
+        title: "E-learning",
+        href: "https://elearning.glbc.co.ke/",
+        description: "Our online learning platform and resources.",
+      },
     ],
   },
   { title: "Faculty", href: "/about/faculty" },

@@ -11,7 +11,7 @@ import {
 
 const FeeTheo = () => {
   return (
-    <div className=" py-8 ">
+    <div className=" py-8 max-w-6xl w-full mx-auto px-4">
       <Table>
         <TableCaption className="caption-top">
           Theology department fees for the academic year 2026/2027.

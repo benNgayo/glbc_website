@@ -39,12 +39,12 @@ const Academics = () => {
       </div>
       <div className="py-16 px-4 md:px-8 max-w-6xl mx-auto ">
         <h1
-          className="text-2xl md:text-3xl font-lora font-bold mb-4 scroll-m-48 "
+          className="text-2xl md:text-3xl font-lora font-bold mb-4 scroll-m-48 text-center "
           id="theology"
         >
           Bible and Theology Programs
         </h1>
-        <div className="flex flex-wrap gap-8 justify-start md:mb-16">
+        <div className="flex flex-wrap gap-8 justify-center md:justify-start md:mb-16">
           <Card className="w-full max-w-xs">
             <CardHeader>
               <GraduationCap className="text-glbc-accent" size={36} />
@@ -121,7 +121,7 @@ const Academics = () => {
         </div>
         <div>
           <h1
-            className="text-2xl md:text-3xl font-lora font-bold mb-4 mt-8 scroll-m-48 "
+            className="text-2xl md:text-3xl font-lora font-bold mb-4 mt-8 scroll-m-48 text-center "
             id="music"
           >
             Music Programs
@@ -210,8 +210,10 @@ const Academics = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-lora text-2xl font-bold ">Short Courses</h1>
-            <p>
+            <h1 className="font-lora text-2xl font-bold text-center ">
+              Short Courses
+            </h1>
+            <p className="text-center p-4">
               <a
                 href="/academics/short-courses"
                 className="text-glbc-primary hover:underline italic font-bold "

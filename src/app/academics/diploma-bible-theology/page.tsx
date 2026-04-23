@@ -76,11 +76,11 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <h1 className="font-lora text-2xl text-gray-700 font-bold max-w-6xl mx-auto px-4 mt-12">
+      <h1 className="font-lora text-2xl text-gray-700 font-bold max-w-6xl mx-auto px-4 mt-12 text-center">
         Course highlights
       </h1>
       <div className=" flex max-w-7xl w-full mx-auto py-12 gap-8 flex-col lg:flex-row justify-between items-start px-4">
-        <div className=" flex flex-col lg:max-w-1/4 md:flex-row flex-wrap  gap-4 ">
+        <div className=" flex flex-col lg:w-1/4 md:flex-row flex-wrap  gap-4 justify-center ">
           <div className="p-4 bg-white rounded-md w-full md:max-w-75 lg:w-full">
             <h1>Preaching Skills</h1>
             <p className="text-gray-500">
@@ -111,8 +111,8 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="w-full lg:px-4">
-          <div className="flex flex-col md:flex-row gap-8  pb-16 ">
+        <div className="w-full lg:w-3/4 lg:px-4">
+          <div className="flex flex-col md:flex-row gap-8  pb-16 justify-center lg:justify-start">
             <div className="md:w-2/3">
               <h1 className="font-lora text-2xl md:text-3xl font-bold text-glbc-secondary/80 mb-4 ">
                 Program Overview
@@ -126,7 +126,7 @@ const Page = () => {
                 and service in various contexts.{" "}
               </p>
             </div>
-            <div className="flex md:flex-col  gap-4 pb-8">
+            <div className="hidden md:flex md:flex-col  gap-4 pb-8">
               <div>
                 <h1 className="text-4xl font-extrabold text-glbc-secondary">
                   72
@@ -148,7 +148,7 @@ const Page = () => {
             type="single"
             collapsible
             // defaultValue="YR1"
-            className="max-w-105 xl:max-w-none w-full"
+            className="max-w-105 xl:max-w-none w-full mx-auto"
           >
             <AccordionItem value="YR1">
               <AccordionTrigger className="cursor-pointer">
@@ -320,9 +320,9 @@ const Page = () => {
               <li>Chaplaincy</li>
             </ul>
           </div>
-          <FeeTheo />
         </div>
       </div>
+      <FeeTheo />
       <div className="relative px-2 md:px-8 mx-auto py-8 md:py-16  gap-4 justify-center text-white">
         <Image
           src="/faculty3.jpg"
