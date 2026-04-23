@@ -1,3 +1,4 @@
+import CTA from "@/components/CallToAction";
 import { Button } from "@/components/ui/button";
 import {
   Award,
@@ -71,7 +72,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-glbc-secondary py-8 md:py-18 ">
+      <div className="bg-glbc-secondary py-8 md:py-18 " id="vision">
         <div className=" md:flex  justify-center gap-8 mx-auto max-w-6xl pt-4 md:pt-8">
           <div className="flex flex-col  gap-4 mb-8 md:mb-0 text-white p-6 rounded-lg w-full md:w-1/2 px-8">
             <h1 className="text-2xl md:text-3xl font-lora font-bold">
@@ -100,7 +101,7 @@ const About = () => {
               Our faith and teaching are grounded in the authority of the Holy
               Scriptures. Read{" "}
               <a
-                href="about/doctrinal-statement"
+                href="about/statement-of-faith"
                 className="text-glbc-accent italic underline hover:underline"
               >
                 our doctrinal statement{" "}
@@ -225,7 +226,7 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2">
             <Image
-              src="/history.jpeg"
+              src="/contact.jpg"
               alt="Our History"
               height={500}
               width={600}
@@ -235,25 +236,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-cente items-center flex-col mt-8 md:my-16 md:py-24 gap-4 border border-gray-300 max-w-6xl mx-auto  p-8 rounded-lg">
-        <h1 className="text-3xl font-serif font-bold">Ready to Apply?</h1>
-        <p>
-          Take the next step in your calling. Fill out the application form and
-          begin your journey at GLBC.
-        </p>
-        <div className="flex gap-4">
-          <Button
-            variant="outline"
-            size="lg"
-            className=" cursor-pointer bg-glbc-accent text-glbc-primary outline-none border-none"
-          >
-            View Programs
-          </Button>
-          <Button variant="outline" size="lg" className=" cursor-pointer ">
-            Apply
-          </Button>
-        </div>
-      </div>
+      <CTA />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { departments } from "@/lib/programs";
 import { BookOpen, GraduationCap, Heart, Quote, Users } from "lucide-react";
 import DepartmentCard from "@/components/DepartmentCard";
 import Image from "next/image";
+import CTA from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -29,10 +30,11 @@ export default function Home() {
               size="lg"
               className=" cursor-pointer bg-glbc-accent text-glbc-primary outline-none border-none"
             >
-              Explore Programs
+              <Link href="/academics">Explore Programs</Link>
             </Button>
+
             <Button variant="outline" size="lg" className=" cursor-pointer ">
-              Contact Us
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>
@@ -47,7 +49,7 @@ export default function Home() {
         </p>
 
         <Link
-          href="/about"
+          href="/about/statement-of-faith"
           className="text-primary border-b border-gray-400 hover:border-gray-900 text-sm"
         >
           READ OUR DOCRINAL STATEMENT
@@ -63,12 +65,13 @@ export default function Home() {
           </h2>
           <div className="absolute mt-2 w-16 h-0.5 bg-glbc-accent"></div>
         </div>
-        <div className="grid justify-center mx-auto mt-8 xl:w-2/3 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-start lg:justify-center mx-auto mt-8 w-full max-w-6xl px-4 gap-8">
           {departments.map((dept) => (
             <DepartmentCard
               key={dept.title}
               title={dept.title}
               description={dept.description}
+              url={dept.url}
               content={dept.content}
               footer={dept.footer}
             />
@@ -109,13 +112,13 @@ export default function Home() {
               </div>
 
               {/* Image */}
-              <div className="md:w-1/2 flex justify-center">
+              <div className="md:w-1/2 flex justify-center ">
                 <Image
-                  src="/bishop-situma.jpg"
+                  src="/Situma.jpg"
                   alt="Bishop Elyves Situma"
                   width={400}
                   height={400}
-                  className="rounded-xl shadow-lg object-cover max-h-105"
+                  className="shadow-lg object-cover max-h-105"
                 />
               </div>
             </div>
@@ -138,7 +141,7 @@ export default function Home() {
             </p>
           </div>
           <div className="p-6 rounded-xl shadow-md text-center bg-white min-w-62.5 ">
-            <a href="/faculty">
+            <a href="/about/faculty">
               <GraduationCap
                 className="mx-auto text-glbc-accent mb-4"
                 size={40}
@@ -174,25 +177,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-cente items-center flex-col mt-8 md:my-16 md:py-24 gap-4 border border-gray-300 max-w-6xl mx-auto  p-8 rounded-lg">
-        <h1 className="text-3xl font-serif font-bold">Ready to Apply?</h1>
-        <p>
-          Take the next step in your calling. Fill out the application form and
-          begin your journey at GLBC.
-        </p>
-        <div className="flex gap-4">
-          <Button
-            variant="outline"
-            size="lg"
-            className=" cursor-pointer bg-glbc-accent text-glbc-primary outline-none border-none"
-          >
-            Apply{" "}
-          </Button>
-          <Button variant="outline" size="lg" className=" cursor-pointer ">
-            Contact Us
-          </Button>
-        </div>
-      </div>
+      <CTA />
     </div>
   );
 }

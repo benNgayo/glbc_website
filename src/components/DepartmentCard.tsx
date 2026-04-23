@@ -11,22 +11,24 @@ import Link from "next/dist/client/link";
 const DepartmentCard = ({
   title,
   description,
+  url,
   footer,
   content,
 }: {
   title: string;
   description: string;
+  url: string;
   footer: string;
   content: string;
 }) => {
   return (
-    <Card>
+    <Card className="max-w-75">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        {/* <CardDescription>{description}</CardDescription> */}
         <CardAction>
           <Link
-            href="/programs/theology"
+            href={url}
             className="bg-glbc-accent/80 text-gray-600 text-sm font-semibold rounded-md p-2 hover:underline"
           >
             View Programs
@@ -38,7 +40,7 @@ const DepartmentCard = ({
       </CardContent>
       <CardFooter>
         {/* <p>Degree • Diploma • Certificate</p> */}
-        <p>{footer}</p>
+        <p className="text-gray-500">{footer}</p>
       </CardFooter>
     </Card>
   );

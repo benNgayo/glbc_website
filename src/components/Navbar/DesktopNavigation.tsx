@@ -8,7 +8,7 @@ type DesktopNavigationProps = {
 };
 const DesktopNavigation = ({ navItems }: DesktopNavigationProps) => {
   return (
-    <NavigationMenu className=" text-lg justify-between items-center hidden lg:flex">
+    <NavigationMenu className=" text-lg justify-between items-center hidden lg:flex ">
       <NavigationMenuList>
         {navItems.map((item) =>
           item.children ? (
