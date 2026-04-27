@@ -46,7 +46,7 @@ const Page = () => {
         <div className="relative text-white text-center flex flex-col gap-8 md:flex-row items-center justify-between w-full max-w-7xl mx-auto mt-12">
           <div className=" items-start flex flex-col gap-4 lg:border-l-4 border-glbc-accent pl-4">
             <h1 className=" text-left text-2xl md:text-4xl font-lora font-bold mb-4">
-              Bachelors of Bible and Theology
+              Bachelor of Bible and Theology
             </h1>
             <h2 className="text-lg md:text-xl font-lora md:max-w-3xl text-left ">
               The Bachelor of Bible and Theology program at GLBC is designed to
