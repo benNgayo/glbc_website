@@ -53,7 +53,9 @@ const Navbar = () => {
             />
           </Link>
           <div className="font-serif text-lg">
-            <h1 className="block md:hidden">GLBC</h1>
+            <h1 className="block md:hidden">
+              <Link href="/">GLBC</Link>
+            </h1>
             <div className="hidden md:block">
               <Link href="/">
                 <h1>Grace Life</h1>

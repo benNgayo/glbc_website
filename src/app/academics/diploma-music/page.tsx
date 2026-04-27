@@ -33,7 +33,7 @@ const Page = () => {
             <div className=" text-center bg-glbc-accent/90 p-4 rounded-lg shadow-lg ">
               <h1 className="font-lora font-bold text-2xl text-white">
                 <a
-                  href="/apply"
+                  href="/contact"
                   className="text-white hover:text-glbc-secondary w-full block transition-colors duration-300"
                 >
                   Apply Now!
@@ -129,7 +129,7 @@ const Page = () => {
               <li>National ID/ Passport.</li>
               <li>Certified copies of the original academic certificates</li>
               <li>Duly filled application forms</li>
-              <li>Dully filled medical assessment form</li>
+              <li>Duly filled medical assessment form</li>
               <li>A non-refundable application fee of Kshs 2,500</li>
             </ol>
           </div>

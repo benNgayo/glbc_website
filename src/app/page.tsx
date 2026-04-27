@@ -18,7 +18,7 @@ export default function Home() {
         <div className="  z-10 w-full flex flex-col items-center justify-center gap-8 pt-16 px-2 md:px-4">
           <div className=" flex flex-col gap-4 text-white font-lora">
             <h1 className=" text-2xl md:text-4xl font-black text-center">
-              Transformed Leaders. Transforming the World
+              Goldy leaders, transformed society
             </h1>
             <h2 className="font-semibold text-center">
               Biblical training for faithful and effective gospel ministry

@@ -6,7 +6,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-const MobileDropdown = ({ item }: { item: NavItem }) => (
+
+const MobileDropdown = ({
+  item,
+  setOpen,
+}: {
+  item: NavItem;
+  setOpen: (open: boolean) => void;
+}) => (
   <Accordion type="single" collapsible>
     <AccordionItem value={item.title}>
       <AccordionTrigger className=" cursor-pointer text-md font-semibold">
@@ -14,7 +21,12 @@ const MobileDropdown = ({ item }: { item: NavItem }) => (
       </AccordionTrigger>
       <AccordionContent className="flex flex-col gap-2 pl-4">
         {item.children?.map((child) => (
-          <Link key={child.href} href={child.href}>
+          <Link
+            key={child.href}
+            href={child.href}
+            className="block py-2 text-sm"
+            onClick={() => setOpen(false)}
+          >
             {child.title}
           </Link>
         ))}

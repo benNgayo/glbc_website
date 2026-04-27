@@ -74,7 +74,7 @@ const Page = () => {
             <div className=" text-center bg-glbc-accent/90 p-4 rounded-lg shadow-lg ">
               <h1 className="font-lora font-bold text-2xl text-white">
                 <a
-                  href="/apply"
+                  href="/contact"
                   className="text-white hover:text-glbc-secondary w-full block transition-colors duration-300"
                 >
                   Apply Now!

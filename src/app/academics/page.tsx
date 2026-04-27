@@ -49,7 +49,7 @@ const Academics = () => {
             <CardHeader>
               <GraduationCap className="text-glbc-accent" size={36} />
               <CardTitle className=" text-xl font-lora font-extrabold">
-                Bachelors of Bible and Theology
+                Bachelor of Bible and Theology
               </CardTitle>
             </CardHeader>
             <CardContent>
