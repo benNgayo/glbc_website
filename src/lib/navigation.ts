@@ -75,7 +75,7 @@ export const facultyMembers = [
       "PhD in Orality (ASOT); PhD Candidate Religious Studies (Kisii)",
     nationality: "Kenyan",
     status: "Full time",
-    imgUrl: "/robert-simiyu-malaba.jpg",
+    imgUrl: "/robert.jpg",
   },
   {
     name: "Mr. Silas Lolo",
@@ -131,7 +131,7 @@ export const facultyMembers = [
     qualification: "BA Theology (GLBC)",
     nationality: "Kenyan",
     status: "Full-Time",
-    imgUrl: "/jacob-njoroge.jpg",
+    imgUrl: "/jacob.jpg",
   },
   {
     name: "Mr. Benedict Ngayo",
@@ -139,6 +139,6 @@ export const facultyMembers = [
     qualification: "MDiv BS Candidate (AIU)",
     nationality: "Kenyan",
     status: "Full-time",
-    imgUrl: "/benedict-ngayo.jpg",
+    imgUrl: "/benedict.jpg",
   },
 ];
