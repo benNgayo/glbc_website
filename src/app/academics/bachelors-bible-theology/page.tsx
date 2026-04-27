@@ -84,11 +84,11 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <h1 className="font-lora text-2xl text-gray-700 font-bold max-w-6xl mx-auto px-4 mt-12">
+      <h1 className="font-lora text-2xl text-gray-700 font-bold max-w-6xl mx-auto px-4 mt-12 text-center">
         Course highlights
       </h1>
       <div className=" flex max-w-7xl w-full mx-auto py-12 gap-8 flex-col lg:flex-row justify-between items-start px-4">
-        <div className=" flex flex-col lg:max-w-1/4 md:flex-row flex-wrap  gap-4 ">
+        <div className=" flex flex-col lg:max-w-1/4 md:flex-row flex-wrap  gap-4 justify-center">
           <div className="p-4 bg-white rounded-md w-full md:max-w-75 lg:w-full">
             <h1>Expository preaching</h1>
             <p className="text-gray-500">
@@ -120,7 +120,7 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full lg:px-4">
-          <div className="flex flex-col md:flex-row gap-8  pb-16 ">
+          <div className="flex flex-col md:flex-row gap-8  pb-16 justify-center lg:justify-start ">
             <div className="md:w-2/3">
               <h1 className="font-lora text-2xl md:text-3xl font-bold text-glbc-secondary/80 mb-4 ">
                 Program Overview

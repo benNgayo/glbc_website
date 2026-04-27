@@ -49,7 +49,7 @@ const FeeTheo = () => {
           </TableRow>
         </TableBody>
       </Table>
-      <div className="flex justify-center  md:justify-end px-4 ">
+      <div className="flex justify-center  px-4 ">
         <Button className="  mt-4 hover:cursor-pointer ">
           {" "}
           Download Fee Structure{" "}

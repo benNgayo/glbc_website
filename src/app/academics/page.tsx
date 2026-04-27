@@ -44,7 +44,7 @@ const Academics = () => {
         >
           Bible and Theology Programs
         </h1>
-        <div className="flex flex-wrap gap-8 justify-center md:justify-start md:mb-16">
+        <div className="flex flex-wrap gap-8 justify-center md:mb-16 mx-auto">
           <Card className="w-full max-w-xs">
             <CardHeader>
               <GraduationCap className="text-glbc-accent" size={36} />
