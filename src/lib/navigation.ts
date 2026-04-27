@@ -83,7 +83,7 @@ export const facultyMembers = [
     qualification: "Phd Candidate Theology, AIU",
     nationality: "Kenyan",
     status: "Full-Time",
-    imgUrl: "/silas-lolo.jpg",
+    imgUrl: "/lolo.jpg",
   },
   {
     name: "Mr. Ronald Muyonga",
@@ -91,7 +91,7 @@ export const facultyMembers = [
     qualification: "PhD Candidate Theology and Development (AIU)",
     nationality: "Kenyan",
     status: "Full-time",
-    imgUrl: "/ronald-muyonga.jpg",
+    imgUrl: "/ronald.jpg",
   },
   {
     name: "Dr. Rick Gregory",
@@ -107,7 +107,7 @@ export const facultyMembers = [
     qualification: "MDiv (Cornerstone Seminary, USA)",
     nationality: "American",
     status: "Full-time",
-    imgUrl: "/justin-schroeder.jpg",
+    imgUrl: "/justin.jpg",
   },
   {
     name: "Leonard Too",
@@ -115,7 +115,7 @@ export const facultyMembers = [
     qualification: "PhD (AIU)",
     nationality: "Kenyan",
     status: "Part-time",
-    imgUrl: "/leonard-too.jpg",
+    imgUrl: "/too.jpg",
   },
   {
     name: "Peter O. Adegbile",
@@ -123,7 +123,7 @@ export const facultyMembers = [
     qualification: "PhD (AIU)",
     nationality: "Nigerian",
     status: "Part-time",
-    imgUrl: "/peter-o-adegbile.jpg",
+    imgUrl: "/adegbile.jpg",
   },
   {
     name: "Mr. Jacob Njoroge",
