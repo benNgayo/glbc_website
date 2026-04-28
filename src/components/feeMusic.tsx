@@ -42,10 +42,16 @@ const FeeMusic = () => {
           </TableRow>
         </TableBody>
       </Table>
-      <div className="flex justify-center  md:justify-end px-4 ">
+      <div className="flex justify-center px-4 ">
         <Button className="  mt-4 hover:cursor-pointer ">
           {" "}
-          Download Fee Structure{" "}
+          <a
+            href="/GLBC MUSIC Fee.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Fee Structure
+          </a>
         </Button>
       </div>
     </div>
