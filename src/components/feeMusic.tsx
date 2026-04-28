@@ -46,7 +46,7 @@ const FeeMusic = () => {
         <Button className="  mt-4 hover:cursor-pointer ">
           {" "}
           <a
-            href="/GLBC MUSIC Fee.pdf"
+            href="/glbc_music_fee.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

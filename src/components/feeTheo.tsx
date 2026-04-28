@@ -53,7 +53,7 @@ const FeeTheo = () => {
         <Button className="  mt-4 hover:cursor-pointer ">
           {" "}
           <a
-            href="/GLBC THEO Fee.pdf"
+            href="/glbc_theo_fee.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
