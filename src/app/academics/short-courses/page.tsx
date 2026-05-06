@@ -22,9 +22,6 @@ const Page = () => {
         </div>
       </div>
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-center mt-8 font-bold text-lg">
-          Music short courses
-        </h1>
         <Table>
           <TableHeader>
             <TableRow>
