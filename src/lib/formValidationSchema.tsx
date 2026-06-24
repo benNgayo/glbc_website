@@ -13,7 +13,7 @@ export type ContactFormSchema = z.infer<typeof contactFormSchema>;
 
 export const admissionFormSchema = z.object({
   // step 1 Personal Information
-  surName: z.string().min(2, "First name must be at least 2 characters long"),
+  surName: z.string().min(2, "Surname must be at least 2 characters long"),
   firstName: z.string().min(2, "First name must be at least 2 characters long"),
   lastName: z.string().min(2, "Last name must be at least 2 characters long"),
   dateOfBirth: z.coerce.date({ message: "Invalid date format" }),
@@ -25,7 +25,12 @@ export const admissionFormSchema = z.object({
   maritalStatus: z.enum(["Single", "Married", "Divorced", "Widowed"], {
     message: "Please select a marital status",
   }),
-  phone: z.string().min(10, "Phone number must be at least 10 digits long"),
+
+  // step 2 Contact Information
+  phone: z
+    .string()
+    .regex(/^2547\d{8}$/)
+    .min(10, "Phone number must be at least 10 digits long"),
   email: z.email("Invalid email address"),
   postalAddress: z
     .string()
@@ -39,6 +44,8 @@ export const admissionFormSchema = z.object({
   nextOfKinPhone: z
     .string()
     .min(10, "Next of kin phone number must be at least 10 digits long"),
+
+  // step 3 Church Information
   churchName: z
     .string()
     .min(2, "Church name must be at least 2 characters long"),
@@ -46,7 +53,7 @@ export const admissionFormSchema = z.object({
     .string()
     .min(2, "Church position must be at least 2 characters long"),
 
-  // step 2 Academic Information
+  // step 4 Academic Information
   highestEducationLevel: z.enum(
     ["High School", "Diploma", "Bachelor's Degree", "Master's Degree", "PhD"],
     { message: "Please select your highest education level" },
@@ -74,7 +81,7 @@ export const admissionFormSchema = z.object({
       message: "Transcript must be a PDF file",
     }),
 
-  // step 3 Program Selection
+  // step 5 Program Selection
   program: z.enum(
     [
       "Bachelor in Bible and Theology",

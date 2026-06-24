@@ -1,0 +1,108 @@
+"use client";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
+import { Turnstile } from "@marsidev/react-turnstile";
+
+import {
+  admissionFormSchema,
+  AdmissionFormSchema,
+} from "../../lib/formValidationSchema";
+
+import PersonalInfo from "./admissions/PersonalInfo";
+
+import { useState } from "react";
+
+const AdmissionsForm = () => {
+  const [step, setStep] = useState(1);
+  const form = useForm<AdmissionFormSchema>({
+    resolver: zodResolver(admissionFormSchema),
+    defaultValues: {
+      surName: "",
+      firstName: "",
+      lastName: "",
+      dateOfBirth: undefined,
+      gender: undefined,
+      countryOfResidence: "",
+      idNumber: "",
+      maritalStatus: undefined,
+      phone: "",
+      email: "",
+      postalAddress: "",
+      nextOfKinName: "",
+      nextOfKinRelationship: "",
+      nextOfKinPhone: "",
+      churchName: "",
+      churchPosition: "",
+      highestEducationLevel: undefined,
+      institutionName: "",
+      countryOfInstitution: "",
+      courseOfStudy: "",
+      yearStrarted: undefined,
+      graduationYear: undefined,
+      transcript: undefined,
+      program: undefined,
+    },
+  });
+
+  const nextStep = async () => {
+    let fields: (keyof AdmissionFormSchema)[] = [];
+
+    if (step === 1) {
+      fields = [
+        "surName",
+        "firstName",
+        "lastName",
+        "dateOfBirth",
+        "gender",
+        "countryOfResidence",
+        "idNumber",
+        "maritalStatus",
+      ];
+    } else if (step === 2) {
+      fields = [
+        "phone",
+        "email",
+        "postalAddress",
+        "nextOfKinName",
+        "nextOfKinRelationship",
+        "nextOfKinPhone",
+      ];
+    } else if (step === 3) {
+      fields = ["churchName", "churchPosition"];
+    } else if (step === 4) {
+      fields = [
+        "highestEducationLevel",
+        "institutionName",
+        "countryOfInstitution",
+        "courseOfStudy",
+        "yearStrarted",
+        "graduationYear",
+        "transcript",
+      ];
+    } else if (step === 5) {
+      fields = ["program"];
+    } else {
+      fields = [];
+    }
+
+    const isValid = await form.trigger(fields);
+
+    if (isValid) setStep((prev) => prev + 1);
+  };
+
+  const onSubmit = (data: AdmissionFormSchema) => {
+    console.log(data);
+    toast.success("Submitted!");
+  };
+
+  return (
+    <form onSubmit={form.handleSubmit(onSubmit)}>
+      {step === 1 && <PersonalInfo form={form} />}
+      {/* {step === 2 && <EducationInfo form={form} />}
+      {step === 3 && <CourseSelection form={form} />}
+      {step === 4 && <Review form={form} />} */}
+    </form>
+  );
+};
+export default AdmissionsForm;

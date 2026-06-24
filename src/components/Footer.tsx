@@ -53,8 +53,8 @@ const Footer = () => {
             </li>
             <li>
               {" "}
-              <a href="mailto:info@glbc.ac.ke" className="hover:underline">
-                Email: info@glbc.ac.ke
+              <a href="mailto:info@glbc.co.ke" className="hover:underline">
+                Email: info@glbc.co.ke
               </a>
             </li>
           </ul>

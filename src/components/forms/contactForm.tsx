@@ -42,8 +42,6 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (data: ContactFormSchema) => {
-    console.log("SUBMIT FIRED", data);
-
     if (!token) {
       toast.error("Please complete verification");
       return;
