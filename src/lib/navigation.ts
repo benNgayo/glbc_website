@@ -60,14 +60,14 @@ export const navItems: NavItem[] = [
 ];
 
 export const facultyMembers = [
-  {
-    name: "Rev. Christopher Mujesia",
-    role: "Principal",
-    qualification: "MA Biblical Studies (AIU)",
-    nationality: "Kenyan",
-    status: "Full time",
-    imgUrl: "/christopher-mujesia.jpg",
-  },
+  // {
+  //   name: "Rev. Christopher Mujesia",
+  //   role: "Principal",
+  //   qualification: "MA Biblical Studies (AIU)",
+  //   nationality: "Kenyan",
+  //   status: "Full time",
+  //   imgUrl: "/christopher-mujesia.jpg",
+  // },
   {
     name: "Mr. Robert Simiyu Malaba",
     role: "Faculty",
@@ -77,20 +77,20 @@ export const facultyMembers = [
     status: "Full time",
     imgUrl: "/robert.jpg",
   },
-  {
-    name: "Mr. Silas Lolo",
-    role: "Faculty",
-    qualification: "Phd Candidate Theology, AIU",
-    nationality: "Kenyan",
-    status: "Full-Time",
-    imgUrl: "/lolo.jpg",
-  },
+  // {
+  //   name: "Mr. Silas Lolo",
+  //   role: "Faculty",
+  //   qualification: "Phd Candidate Theology, AIU",
+  //   nationality: "Kenyan",
+  //   status: "Full-Time",
+  //   imgUrl: "/lolo.jpg",
+  // },
   {
     name: "Mr. Ronald Muyonga",
-    role: "Faculty",
+    role: "Visiting Lecturer",
     qualification: "PhD Candidate Theology and Development (AIU)",
     nationality: "Kenyan",
-    status: "Full-time",
+    status: "Part-Time",
     imgUrl: "/ronald.jpg",
   },
   {
