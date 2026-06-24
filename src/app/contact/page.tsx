@@ -47,7 +47,7 @@ const Page = () => {
             </div>
             <div>
               <h1 className="text-lg">Email</h1>
-              <p className="text-gray-500">info@glbc.ac.ke</p>
+              <p className="text-gray-500">info@glbc.co.ke</p>
             </div>
             <div>
               <h1 className="text-lg">Our Location</h1>
